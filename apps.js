@@ -11,7 +11,10 @@ app.set('view engine', 'ejs');
 //Setup public folder
 app.use(express.static(path.join(__dirname,'public')));
 
-
+// App
+app.get("/",function(req,res){
+ res.send("index");
+})
 
 // Setuo server
 var port = 3000;
